@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "672428f63eb2ec08c1018f4e"
+  },
+  "enrollmentDate": {
+    "$date": "2024-10-31T19:30:00.000Z"
+  },
+  "student": {
+    "_id": {
+      "$oid": "67241bb252c9b85bf6adad48"
+    },
+    "firstName": "Lourdes",
+    "lastName": "Pino",
+    "dni": "12345678",
+    "age": 28
+  },
+  "courses": [
+    {
+      "_id": {
+        "$oid": "671f184a7b0b3446744111ca"
+      },
+      "name": "Introducción a la Programación",
+      "acronyms": "IP",
+      "status": true
+    },
+    {
+      "_id": {
+        "$oid": "671f1d047b0b3446744111cb"
+      },
+      "name": "Introducción a la Programación",
+      "acronyms": "IP",
+      "status": false
+    }
+  ],
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67243363da5e5d578f748f39"
+  },
+  "enrollmentDate": {
+    "$date": "2024-10-31T19:30:00.000Z"
+  },
+  "student": {
+    "_id": {
+      "$oid": "67241b8752c9b85bf6adad47"
+    },
+    "firstName": "Martin",
+    "lastName": "Garcia",
+    "dni": "12345678",
+    "age": 30
+  },
+  "courses": [
+    {
+      "_id": {
+        "$oid": "671f184a7b0b3446744111ca"
+      },
+      "name": "Introducción a la Programación",
+      "acronyms": "IP",
+      "status": true
+    },
+    {
+      "_id": {
+        "$oid": "671f1d047b0b3446744111cb"
+      },
+      "name": "Introducción a la Programación",
+      "acronyms": "IP",
+      "status": false
+    },
+    {
+      "_id": {
+        "$oid": "671f22164d175830c30892b0"
+      },
+      "name": "Bases de Datos Avanzadas",
+      "acronyms": "DBA",
+      "status": true
+    }
+  ],
+  "status": true
+}]

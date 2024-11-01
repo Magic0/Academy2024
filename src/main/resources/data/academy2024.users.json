@@ -1,0 +1,46 @@
+	[{
+	  "_id": {
+		"$oid": "5e01811b6406aa781ce64410"
+	  },
+	  "username": "mitocode",
+	  "password": "$2a$10$ju20i95JTDkRa7Sua63JWOChSBc0MNFtG/6Sps2ahFFqN.HCCUMW.",
+	  "status": true,
+	  "roles": [
+		{
+		  "_id": {
+			"$oid": "5e0181036406aa781ce6440e"
+		  }
+		}
+	  ]
+	},
+	{
+	  "_id": {
+		"$oid": "5e052cd662f50066a04e0460"
+	  },
+	  "username": "code",
+	  "password": "$2a$10$ju20i95JTDkRa7Sua63JWOChSBc0MNFtG/6Sps2ahFFqN.HCCUMW.",
+	  "status": true,
+	  "roles": [
+		{
+		  "_id": {
+			"$oid": "5e0181106406aa781ce6440f"
+		  }
+		}
+	  ]
+	},
+	{
+	  "_id": {
+		"$oid": "672511df6f885b490cc7cce0"
+	  },
+	  "username": "magic0",
+	  "password": "$2a$10$GuqAMBZd15KyYv9EJ81ifuE8vJNBESZOj9JU8jRJAYmg0BVXVlcpu",
+	  "status": true,
+	  "roles": [
+		{
+		  "_id": {
+			"$oid": "5e0181036406aa781ce6440e"
+		  },
+		  "name": "ADMIN"
+		}
+	  ]
+	}]

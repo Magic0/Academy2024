@@ -1,0 +1,1117 @@
+{
+	"info": {
+		"_postman_id": "bd02ea2a-f5eb-4a12-b570-3d907c4acf07",
+		"name": "Mitocode-Evaluacion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25079719"
+	},
+	"item": [
+		{
+			"name": "Academy",
+			"item": [
+				{
+					"name": "v0",
+					"item": [
+						{
+							"name": "Course",
+							"item": [
+								{
+									"name": "Add Course",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"nameCourse\": \"Desarrollo Web con React\",\r\n    \"acronymsCourse\": \"DMR\",\r\n    \"statusCourse\": true\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/v0/courses",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v0",
+												"courses"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Courses",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v0/courses",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v0",
+												"courses"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Course",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"nameCourse\": \"Desarrollo de Aplicaciones Móviles con Flutter\",\r\n    \"acronymsCourse\": \"DAMF\",\r\n    \"statusCourse\": true\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/v0/courses/670171a48484887609d34d56",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v0",
+												"courses",
+												"670171a48484887609d34d56"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete Course",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v0/courses/670171a48484887609d34d56",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v0",
+												"courses",
+												"670171a48484887609d34d56"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Student",
+							"item": [
+								{
+									"name": "Add Student",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Lourdes\",\r\n    \"surname\": \"Pino\",\r\n    \"dni\": \"12345678\",\r\n    \"age\": 30\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/v0/students",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v0",
+												"students"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Students",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v0/students",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v0",
+												"students"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Sort Students",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v0/students/sorted?sort=DESC",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v0",
+												"students",
+												"sorted"
+											],
+											"query": [
+												{
+													"key": "sort",
+													"value": "DESC"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Student",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Lourdes\",\r\n    \"surname\": \"Pino\",\r\n    \"dni\": \"12345678\",\r\n    \"age\": 28\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/v0/students/67241bb252c9b85bf6adad48",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v0",
+												"students",
+												"67241bb252c9b85bf6adad48"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete Student",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v0/students/2",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v0",
+												"students",
+												"2"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Enrollment",
+							"item": [
+								{
+									"name": "Add Enrollment",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Lourdes\",\r\n    \"surname\": \"Pino\",\r\n    \"dni\": \"12345678\",\r\n    \"age\": 30\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/v0/enrollments",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v0",
+												"enrollments"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Enrollments",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v0/enrollments",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v0",
+												"enrollments"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Enrollment",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"enrollmentDate\": \"2024-10-31T14:30:00\",\r\n    \"student\": {\r\n        \"id\": \"67241bb252c9b85bf6adad48\",\r\n        \"name\": \"Lourdes\",\r\n        \"surname\": \"Pino\",\r\n        \"dni\": \"12345678\",\r\n        \"age\": 28\r\n    },\r\n    \"courses\":[\r\n        {\r\n            \"id\": \"671f184a7b0b3446744111ca\",\r\n            \"nameCourse\": \"Introducción a la Programación\",\r\n            \"acronymsCourse\": \"IP\",\r\n            \"statusCourse\": true\r\n        },\r\n        {\r\n            \"id\": \"671f1d047b0b3446744111cb\",\r\n            \"nameCourse\": \"Introducción a la Programación\",\r\n            \"acronymsCourse\": \"IP\",\r\n            \"statusCourse\": false\r\n        }        \r\n    ],\r\n    \"status\": true\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/v0/enrollments/672428f63eb2ec08c1018f4e",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v0",
+												"enrollments",
+												"672428f63eb2ec08c1018f4e"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete Enrollment",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v0/enrollments/6724253d52c9b85bf6adad49",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v0",
+												"enrollments",
+												"6724253d52c9b85bf6adad49"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Report Enrollments Copy",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v0/enrollments/generateReport/67243363da5e5d578f748f39",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v0",
+												"enrollments",
+												"generateReport",
+												"67243363da5e5d578f748f39"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "v1",
+					"item": [
+						{
+							"name": "Course",
+							"item": [
+								{
+									"name": "Add Course",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"nameCourse\": \"Desarrollo Web con React\",\r\n    \"acronymsCourse\": \"DMR\",\r\n    \"statusCourse\": true\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/v1/courses",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v1",
+												"courses"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Courses",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v1/courses",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v1",
+												"courses"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Course",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"nameCourse\": \"Desarrollo de Aplicaciones Móviles con Flutter\",\r\n    \"acronymsCourse\": \"DAMF\",\r\n    \"statusCourse\": true\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/v1/courses/671f3a654fa4b14a11223766",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v1",
+												"courses",
+												"671f3a654fa4b14a11223766"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete Course",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v1/courses/2",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v1",
+												"courses",
+												"2"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Student",
+							"item": [
+								{
+									"name": "Add Student",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Martin\",\r\n    \"surname\": \"Garcia\",\r\n    \"dni\": \"13335678\",\r\n    \"age\": 30\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/v1/students",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v1",
+												"students"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Students",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v1/students",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v1",
+												"students"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Student",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Diego\",\r\n    \"surname\": \"Vicuña\",\r\n    \"dni\": \"13335678\",\r\n    \"age\": 32\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/v1/students/6724602594fda668753367dc",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v1",
+												"students",
+												"6724602594fda668753367dc"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete Student",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v1/students/2",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v1",
+												"students",
+												"2"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Sort Students",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v1/students/sorted?sort=DESC",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v1",
+												"students",
+												"sorted"
+											],
+											"query": [
+												{
+													"key": "sort",
+													"value": "DESC"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Enrollment",
+							"item": [
+								{
+									"name": "Add Enrollment",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"enrollmentDate\": \"2024-10-31T14:30:00\",\r\n    \"student\": {\r\n        \"id\": \"67241b8752c9b85bf6adad47\",\r\n        \"name\": \"Martin\",\r\n        \"surname\": \"Garcia\",\r\n        \"dni\": \"12345678\",\r\n        \"age\": 30\r\n    },\r\n    \"courses\":[\r\n        {\r\n            \"id\": \"671f184a7b0b3446744111ca\",\r\n            \"nameCourse\": \"Introducción a la Programación\",\r\n            \"acronymsCourse\": \"IP\",\r\n            \"statusCourse\": true\r\n        },\r\n        {\r\n            \"id\": \"671f1d047b0b3446744111cb\",\r\n            \"nameCourse\": \"Introducción a la Programación\",\r\n            \"acronymsCourse\": \"IP\",\r\n            \"statusCourse\": false\r\n        },\r\n        {\r\n            \"id\": \"671f22164d175830c30892b0\",\r\n            \"nameCourse\": \"Bases de Datos Avanzadas\",\r\n            \"acronymsCourse\": \"DBA\",\r\n            \"statusCourse\": true\r\n        }\r\n    ],\r\n    \"status\": true\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/v1/enrollments",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v1",
+												"enrollments"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Enrollments",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v1/enrollments",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v1",
+												"enrollments"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Report Enrollments",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v1/enrollments/generateReport/67243363da5e5d578f748f39",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v1",
+												"enrollments",
+												"generateReport",
+												"67243363da5e5d578f748f39"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Enrollment",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"enrollmentDate\": \"2024-10-31T14:30:00\",\r\n    \"student\": {\r\n        \"id\": \"67241bb252c9b85bf6adad48\",\r\n        \"name\": \"Lourdes\",\r\n        \"surname\": \"Pino\",\r\n        \"dni\": \"12345678\",\r\n        \"age\": 28\r\n    },\r\n    \"courses\":[\r\n        {\r\n            \"id\": \"671f184a7b0b3446744111ca\",\r\n            \"nameCourse\": \"Introducción a la Programación\",\r\n            \"acronymsCourse\": \"IP\",\r\n            \"statusCourse\": true\r\n        },\r\n        {\r\n            \"id\": \"671f1d047b0b3446744111cb\",\r\n            \"nameCourse\": \"Introducción a la Programación\",\r\n            \"acronymsCourse\": \"IP\",\r\n            \"statusCourse\": false\r\n        }        \r\n    ],\r\n    \"status\": true\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/v1/enrollments/672428f63eb2ec08c1018f4e",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v1",
+												"enrollments",
+												"672428f63eb2ec08c1018f4e"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete Enrollment",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v1/enrollments/6724253d52c9b85bf6adad49",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v1",
+												"enrollments",
+												"6724253d52c9b85bf6adad49"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var data = JSON.parse(responseBody);\r",
+									"console.log(data);\r",
+									"pm.environment.set(\"token\",data.token );"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"mitocode\",\r\n    \"password\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var data = JSON.parse(responseBody);\r",
+									"console.log(data);\r",
+									"pm.environment.set(\"token\",data.token );"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"magic0\",\r\n    \"password\": \"123456\",\r\n    \"status\": true,\r\n    \"roles\" : [\r\n    {\r\n        \"id\" : \"5e0181036406aa781ce6440e\",\r\n        \"name\": \"ADMIN\"\r\n    }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

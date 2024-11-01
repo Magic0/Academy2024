@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "67241b8752c9b85bf6adad47"
+  },
+  "firstName": "Martin",
+  "lastName": "Garcia",
+  "dni": "12345678",
+  "age": 30
+},
+{
+  "_id": {
+    "$oid": "67241bb252c9b85bf6adad48"
+  },
+  "firstName": "Lourdes",
+  "lastName": "Pino",
+  "dni": "12345678",
+  "age": 28
+},
+{
+  "_id": {
+    "$oid": "6724602594fda668753367dc"
+  },
+  "firstName": "Diego",
+  "lastName": "Vicuña",
+  "dni": "13335678",
+  "age": 32
+}]

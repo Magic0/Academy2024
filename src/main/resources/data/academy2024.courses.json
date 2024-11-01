@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "671f184a7b0b3446744111ca"
+  },
+  "name": "Introducción a la Programación",
+  "acronyms": "IP",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "671f1d047b0b3446744111cb"
+  },
+  "name": "Introducción a la Programación",
+  "acronyms": "IP",
+  "status": false
+},
+{
+  "_id": {
+    "$oid": "671f22164d175830c30892b0"
+  },
+  "name": "Bases de Datos Avanzadas",
+  "acronyms": "DBA",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "671f222c4d175830c30892b1"
+  },
+  "name": "Introducción a la Inteligencia Artificial",
+  "acronyms": "IA",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "671f3a654fa4b14a11223766"
+  },
+  "name": "Desarrollo de Aplicaciones Móviles con Flutter",
+  "acronyms": "DAMF",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67248d9c381af7653c73c142"
+  },
+  "name": "Desarrollo Web con React",
+  "acronyms": "DMR",
+  "status": true
+}]
